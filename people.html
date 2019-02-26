@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Detecting Objects in Aerial Images (DOAI)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">Start Bootstrap</a> -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cfp.html">CFP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" style="color:black;font-size:28px">
+                            Challenge
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- <li class="nav-item">
+                      <a class="nav-link" href="guideline.html">Participation guidelines</a>
+                    </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="dataset.html">Dataset</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tasks.html">Tasks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="evaluation.html">Evaluation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="results.html">Results</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ImportantDate.html"> Dates </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/satellite.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1 style="text-align:center; margin-top:80px; font-weight: bold; font-size: 35px;">
+                            Detecting Objects in Aerial Images (DOAI)
+                        </h1>
+                        <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+                        <span class="subheading">A Workshop at CVPR'2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2>
+                    Organizers
+                </h2>
+                <ul>
+                    <li>
+                        <!-- <img src="images/xia.png" class="img-rounded" alt="Cinque Terre" width="25%"> -->
+                        <div class="gallery">
+                            <a target="_blank" href="images/xia.png">
+                                <img src="images/xia.jpg" alt="Cinque Terre">
+                            </a>
+                            <!-- <div class="desc">Gui-song Xia</div> -->
+
+                        </div>
+                        <strong>
+                            <a href="http://captain.whu.edu.cn/xia_En.html">Gui-Song Xia</a>
+                        </strong> Professor at LIESMARS, Wuhan University, China
+                    </li>
+                    <li>
+                        <div class="gallery">
+                            <a target="_blank" href="images/LiangpeiZhang.jpg">
+                                <img src="images/LiangpeiZhang.jpg" alt="Mountains">
+                            </a>
+                            <div class="desc">Liangpei Zhang</div>
+                        </div>
+                        <!-- <strong>
+                            <a href="http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/xueshu.htm">Liangpei Zhang</a>
+                        </strong>  -->
+                        Professor at LIESMARS, Wuhan University, China
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="http://mclab.eic.hust.edu.cn/~xbai/">Xiang Bai</a>
+                        </strong> Professor of the School of Electronic Information and Communications, Huazhong University of Science
+                        and Technology, China
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="http://vision.cornell.edu/se3/people/serge-belongie/">Serge Belongie</a>
+                        </strong> Professor at Cornell Tech and the Department of Computer Science at Cornell University, United States
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="http://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a>
+                        </strong> Professor of Computer Science, University of Rochester, United States
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="http://www.dlr.de/caf/en/desktopdefault.aspx/tabid-5242/8788_read-933/sortby-lastname/">Mihai Datcu</a>
+                        </strong> Scientist with the German Aerospace Center (DLR), Germany
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="http://www.dsi.unive.it/~pelillo/">Marcello Pelillo</a>
+                        </strong> Professor of Computer Science, Ca’ Foscari University of Venice, Italy
+                    </li>
+
+                </ul>
+
+                <div>
+                    <div class="gallery">
+                        <a target="_blank" href="images/xia.png">
+                            <img src="images/xia.jpg" alt="Cinque Terre">
+                        </a>
+                        <div class="desc">Gui-song Xia</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="images/LiangpeiZhang.jpg">
+                            <img src="images/LiangpeiZhang.jpg" alt="Mountains">
+                        </a>
+                        <div class="desc">Liangpei Zhang</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="images/XiangBai.jpg">
+                            <img src="images/XiangBai.jpg" alt="Forest">
+                        </a>
+                        <div class="desc">Xiang Bai</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/SergeBelongie.jpg">
+                            <img src="images/SergeBelongie.jpg">
+                        </a>
+                        <div class="desc">Serge Belongie</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/JieboLuo.jpg">
+                            <img src="images/JieboLuo.jpg">
+                        </a>
+                        <div class="desc">Jiebo Luo</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/Mihai_Datcu.jpg">
+                            <img src="images/Mihai_Datcu.jpg">
+                        </a>
+                        <div class="desc">Mihai Datcu</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/Pelillo.jpg">
+                            <img src="images/Pelillo.jpg">
+                        </a>
+                        <div class="desc">Marcello Pelillo</div>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <h2>
+                    Committee
+                </h2>
+                <p>
+                    TBA.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

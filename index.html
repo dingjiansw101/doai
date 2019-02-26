@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Detecting Objects in Aerial Images (DOAI)</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,8 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
@@ -28,14 +29,62 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <a class="navbar-brand" href="index.html">Start Bootstrap</a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cfp.html">CFP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" style="color:black;font-size:28px">
+               Challenge
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- <li class="nav-item">
+                      <a class="nav-link" href="guideline.html">Participation guidelines</a>
+                    </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="dataset.html">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tasks.html">Tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="evaluation.html">Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="results.html">Results</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html">Program</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="ImportantDate.html"> Dates </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <!-- <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -46,21 +95,24 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/satellite.jpg')">
+  <header class="masthead" style="background-image: url('images/background5.png')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1 style="text-align:center; margin-top:80px; font-weight: bold; font-size: 38px;">
+              Detecting Objects in Aerial Images (DOAI)
+            </h1>
+            <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+            <span class="subheading">A Workshop at CVPR'2019</span>
           </div>
         </div>
       </div>
@@ -71,7 +123,46 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
+        <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+          News
+        </h2>
+        <p>
+          <ul>
+            <li>
+              <strong>2019-1-31</strong> Preparations for the workshop are underway
+            </li>
+          </ul>
+        </p>
+
+        <h2>
+          Important Dates
+        </h2>
+        <p>
+          <ul>
+            <li>
+              Registration open and call for challenge: March 5, 2019
+            </li>
+            <li>
+              Training/Validation dataset available: March 5, 2019
+            </li>
+            <li>
+              Opening submission site and provide testing dataset: March 20, 2019
+            </li>
+            <li>
+              <strong>Challenge submission deadline:</strong> April 15, 2019
+            </li>
+            <li>
+              <strong>Paper submission deadline:</strong> April 17, 2019
+            </li>
+            <li>
+              Paper notification to authors: May 10, 2019
+            </li>
+            <li>
+              Camera ready deadline: May 17, 2019
+            </li>
+          </ul>
+        </p>
+        <!-- <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
               Man must explore, and this is exploration at its greatest
@@ -122,12 +213,12 @@
           <p class="post-meta">Posted by
             <a href="#">Start Bootstrap</a>
             on July 8, 2019</p>
-        </div>
-        <hr>
+        </div> -->
+        <!-- <hr> -->
         <!-- Pager -->
-        <div class="clearfix">
+        <!-- <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
