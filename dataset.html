@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Detecting Objects in Aerial Images (DOAI)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="index.html">Start Bootstrap</a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cfp.html">CFP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" style="color:black;font-size:28px">
+               Challenge
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- <li class="nav-item">
+                      <a class="nav-link" href="guideline.html">Participation guidelines</a>
+                    </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="dataset.html">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tasks.html">Tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="evaluation.html">Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="results.html">Results</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html">Program</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="ImportantDate.html"> Dates </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('images/background5.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1 style="text-align:center; margin-top:80px; font-weight: bold; font-size: 38px;">
+              Detecting Objects in Aerial Images (DOAI)
+            </h1>
+            <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+            <span class="subheading">A Workshop at CVPR'2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>
+            Registration
+        </h2>
+        <p>
+            To download the extra test images and submit your results, please registrate on the
+            <!-- <a href="http://119.23.15.48:8002/login/?next=/l">contest page</a>. -->
+            <a href="#">contest page</a>.
+        </p>
+
+        <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+            Image Source and Usage License
+        </h2>
+        <p style="text-align:justify;">
+            The images of in DOAI2019 dataset are manily collected from the Google Earth, some are taken by satellite JL-1, the others
+            are taken by satellite GF-2 of the China Centre for Resources Satellite Data and Application.
+        </p>
+        <p style="text-align:justify;">
+            Use of the images from Google Earth must respect the corresponding terms of use:
+            <a href="https://www.google.com/permissions/geoguidelines.html">"Google Earth" terms of use</a>.
+        </p>
+        <p style="text-align:justify;">
+            All images and their associated annotations in DOAI2019
+            <strong style="color:blue">can be used for academic purposes only, but any commercial use is prohibited</strong>.
+        </p>
+        <h2>
+            Object Category
+        </h2>
+        <p>
+            The object categories in DOAI2019 include: plane, ship, storage tank, baseball diamond, tennis court, basketball court, ground
+            track field, harbor, bridge, large vehicle, small vehicle, helicopter, roundabout, soccer ball field and basketball
+            court.
+        </p>
+
+        <h2>
+            Annotation format
+        </h2>
+        <p style="text-align:justify; font-size: 17px">
+            In the dataset, each instance's location is annotated by a quadrilateral bounding boxes, which can be denoted as
+            <strong style="color:blue"> "x
+                <sub>1</sub>, y
+                <sub>1</sub>, x
+                <sub>2</sub>, y
+                <sub>2</sub>, x
+                <sub>3</sub>, y
+                <sub>3</sub>, x
+                <sub>4</sub>, y
+                <sub>4</sub>" </strong>
+            where (x
+            <sub>i</sub>, y
+            <sub>i</sub>) denotes the positions of the oriented bounding boxes' vertices in the image. The vertices are arranged in a
+            clockwise order. The following is the Visualization of adopted annotation method. The yellow point represents the
+            <strong style="color:blue">starting point</strong>. which refers to: (a) top left corner of a plane, (b) top left corner of a large vehicle diamond,
+            (c) the center of sector-shaped baseball.
+        </p>
+        <p style="text-align:justify; font-size: 17px">
+            Except the annotation of location, category label is assigned for each instance, which comes from one of the above 15 selected
+            categories, and meanwhile a difficult label is provided which indicates whether the instance is difficult to be detected(1
+            for difficult, 0 for not difficult). Annotations for an image are saved in a text file with the same file name. At the
+            first line, 'imagesource'(from GoogleEarth, GF-2 or JL-1) is given. At the second line, ’gsd’(ground sample distance,
+            the physical size of one image pixel, in meters) is given.
+            <strong style="color:blue">Note if the 'gsd' is missing, it is annotated to be 'null'.</strong> From third line to last line in annotation text
+            file, annotation for each instance is given. The annotation format is:
+        </p>
+        <pre>
+            <code style="font-size:16px;">
+'imagesource':imagesource
+'gsd':gsd
+x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, x<sub>3</sub>, y<sub>3</sub>, x<sub>4</sub>, y<sub>4</sub>, category, difficult
+x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, x<sub>3</sub>, y<sub>3</sub>, x<sub>4</sub>, y<sub>4</sub>, category, difficult
+...						
+            </code>
+        </pre>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <div class="container">
+                        <!-- <h2>Rounded Corners</h2> -->
+                        <!-- <img src="http://captain.whu.edu.cn/DOTAweb/images/plane1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> -->
+                        <img src="images/plane1.jpg" class="img-rounded" alt="Cinque Terre" width="25%">
+                        <!-- <figcaption style="position:absolute; left:180px; font-size:18px;"><strong>(a)</strong></figcaption>  -->
+
+                        <figcaption style="position:absolute; left:44%; font-size:18px;">
+                            <strong>(a)</strong>
+                        </figcaption>
+                        <!-- <p style="text-align:center;position:relative"> a </p> -->
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="container">
+                        <!-- <h2>Rounded Corners</h2> -->
+                        <!-- <img src="http://captain.whu.edu.cn/DOTAweb/images/rotaterec.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> -->
+                        <img src="images/rotaterec.jpg" class="img-rounded" alt="Cinque Terre" width="25%">
+                        <!-- <figcaption style="position:absolute; left:180px; font-size:18px"> <strong>(b)</strong></figcaption>  -->
+                        <figcaption style="position:absolute; left:45%; font-size:18px">
+                            <strong>(b)</strong>
+                        </figcaption>
+                        <!-- <p style="text-align:center">b </p> -->
+
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="container">
+                        <!-- <h2>Rounded Corners</h2> -->
+                        <!-- <img src="http://captain.whu.edu.cn/DOTAweb/images/baseball2.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> -->
+                        <img src="images/baseball2.jpg" class="img-rounded" alt="Cinque Terre" width="25%">
+                        <figcaption style="position:absolute; left:45%; font-size:18px">
+                            <strong>(c)</strong>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>
+            Download
+        </h2>
+        <p style="text-align:justify; font-size: 17px">
+            You can download DOAI2019 from either Baidu Drive or Google Drive, according to your network connections.
+        </p>
+        <ul>
+
+            <li style="font-size:17px">
+                DOAI2019 on Baidu Drive:
+                <a href="">Training set</a>,
+                <a href="">Validation set</a>,
+                <a href="">Testing images</a>
+            </li>
+            <li style="font-size:17px">
+                DOAI2019 on Google Drive:
+                <a href="">Training set</a>,
+                <a href="">Validation set</a>,
+                <a href="">Testing images</a>
+            </li>
+            <br>
+            <br>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/home?status=https%3A//dingjiansw101.github.io/doai/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dingjiansw101.github.io/doai/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

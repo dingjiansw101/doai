@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Detecting Objects in Aerial Images (DOAI)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">Start Bootstrap</a> -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cfp.html">CFP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" style="color:black;font-size:28px">
+                            Challenge
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- <li class="nav-item">
+                      <a class="nav-link" href="guideline.html">Participation guidelines</a>
+                    </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="dataset.html">Dataset</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tasks.html">Tasks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="evaluation.html">Evaluation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="results.html">Results</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ImportantDate.html"> Dates </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('images/background5.png')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1 style="text-align:center; margin-top:80px; font-weight: bold; font-size: 38px;">
+                            Detecting Objects in Aerial Images (DOAI)
+                        </h1>
+                        <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+                        <span class="subheading">A Workshop at CVPR'2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2>
+                    Overview
+                </h2>
+                <p>
+                    We propose three detection tasks. Task1 is to detect instances with oriented bounding boxes. Task2 is to detect instances
+                    with horizontal bounding boxes. Task3 is jointly object detection and orientation estimation for movable
+                    instances
+                    <!-- The results from task2 are of great practical value.  -->
+                    <!-- We recommond you to test your algorithms by way of Task1.  -->
+                    You can use the provided train/val data to train and validate your detector. Validation data may also be used for training
+                    when submitting results on the test set. External datas of any form is allowed. But must be reported
+                    during submission. Fine-tuning models that are pretrained on ImageNet or COCO are also allowed.
+                </p>
+
+                <h2>
+                    <b>Task1</b> - Detection with oriented bounding boxes
+                    <!--<strong>(Recommended)</strong> -->
+                </h2>
+                <p>
+                    The purpose of this task is to localize the ground object instances with an oriented bounding box. The oriented bounding
+                    box follows the same format with the original annotation {(x
+                    <sub>i</sub>, y
+                    <sub>i</sub>), i = 1,2,3,4}.
+                </p>
+
+                <!-- <h3>
+            Evaluation Server
+        </h3>
+        <p>
+            For evaluation, you must registrate and submit on the 
+                <a href="http://www.icdar2017chinese.site:5080/evaluation1/">Evaluation Server</a>
+        </p> -->
+
+                <h3>
+                    Submission Format
+                </h3>
+                <p>
+                    You will be asked to submit a zip file containing results for all test images to evaluate your results.
+                    <!-- The results are stored in 15 files, <strong style="color:blue">"Task1_plane.txt, Task1_storage-tank.txt, ..."</strong>, each file contains all the results for a specific category.   -->
+                    Each file is in the following format:
+                </p>
+                <pre>
+            <code style="font-size:16px">
+x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> x<sub>3</sub> y<sub>3</sub> x<sub>4</sub> y<sub>4</sub> category score 
+x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> x<sub>3</sub> y<sub>3</sub> x<sub>4</sub> y<sub>4</sub> category score
+...
+            </code>
+        </pre>
+
+                <!-- <a href="submissionformat/example_task1.rar">An example submission of task2</a> -->
+
+                <h3>
+                    Evaluation Protocol
+                </h3>
+                <p>
+                    The evaluation protocol for oriented bounding box is a little different from the protocol in the original PASCAL VOC. We
+                    use the intersection over the union area of two polygons(ground truth and prediction) to calculate the
+                    IoU. The rest follows the PASCAL VOC.
+                </p>
+
+
+                <h2>
+                    <b>Task2</b> - Detection with horizontal bounding boxes
+                </h2>
+                <p>
+                    Detecting object with horizontal bounding boxes is usual in many previous contests for object detection. The aim of this
+                    task is to accurately localize the instance in terms of horizontal bounding box with (x, y, w, h) format.
+                    In the task, the ground truths for training and testing are generated by calculating the axis-aligned
+                    bounding boxes over original annotated bounding boxes.
+                </p>
+                <p>
+
+                </p>
+
+                <!-- <h3>
+                Evaluation Server
+            </h3>
+            <p>
+                For evaluation, you must registrate and submit on the
+                    <a href="http://www.icdar2017chinese.site:5080/evaluation1/">Evaluation Server</a>
+            </p> -->
+
+                <h3>
+                    Submission Format
+                </h3>
+                <p>
+                    You will be asked to submit a zip file containing results for all test images to evaluate your results.
+                    <!--The results are stored in 15 files, -->
+                    <!--<strong style="color:blue">"Task2_plane.txt, Task2_storage-tank.txt, ..."</strong>, each file contains all the results for a specific category.-->
+                    The format of the results is:
+                </p>
+
+                <pre>
+                <code style="font-size:16px">
+x y w h category score
+x y w h category score
+...
+                </code>
+            </pre>
+                <!-- <a href="submissionformat/example_task2.rar">An example submission of task1</a> -->
+
+                <h3>
+                    Evaluation Protocol
+                </h3>
+                <p>
+                    The evaluation protocol for horizontal bounding boxes follows the PASCAL VOC benchmark, which uses mean Average Precision(
+                    <strong>mAP</strong>) as the primary metric.
+                </p>
+
+
+                <h2>
+                    <b>Task3</b> - Jointly object detection and orientation estimation for movable instances
+                </h2>
+                <p>
+                    This task aims to estimate the orientation for movable instances(vehicles, planes, and ships), which is important when applied
+                    to tracking. To make it clear, in this task, each instance's location and orientation is represented
+                    by (x, y, w, h, &theta;) transferred from {(x
+                    <sub>i</sub>, y
+                    <sub>i</sub>), i = 1,2,3,4}.
+                </p>
+                <p>
+
+                </p>
+
+                <!-- <h3>
+            Evaluation Server
+        </h3>
+        <p>
+            For evaluation, you must registrate and submit on the
+                <a href="http://www.icdar2017chinese.site:5080/evaluation1/">Evaluation Server</a>
+        </p> -->
+
+                <h3>
+                    Submission Format
+                </h3>
+                <p>
+                    You will be asked to submit a zip file containing results for all test images to evaluate your results.
+                    <!--The results are stored in 15 files, -->
+                    <!--<strong style="color:blue">"Task2_plane.txt, Task2_storage-tank.txt, ..."</strong>, each file contains all the results for a specific category.-->
+                    The format of the results is:
+                </p>
+
+                <pre>
+            <code style="font-size:16px">
+x y w h &Theta; category score
+x y w h &Theta; category score
+...
+                </code>
+            </pre>
+                <!-- <a href="submissionformat/example_task2.rar">An example submission of task1</a> -->
+
+                <h3>
+                    Evaluation Protocol
+                </h3>
+                <p>
+                    Note that the evaluation protocol of this task is slightly different from that of Task 2. In Task 2, if the IoU between the
+                    predicted box and ground truth is more than a certain threshold, it is assigned to be true positive(TP).
+                    While in Task3, in addition to requiring IoU to be more than a threshold, the difference in angle is
+                    required to be less than a certain threshold. As a result, the mAP for moveable classes in Task2 is upbound
+                    of Task3. There is a similar metric in PASCAL3D+ which was called Average Viewpoint Precision(
+                    <strong>AVP</strong>).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/home?status=https%3A//dingjiansw101.github.io/doai/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dingjiansw101.github.io/doai/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
